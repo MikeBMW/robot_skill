@@ -54,5 +54,6 @@ Repository: https://github.com/MikeBMW/robot_skill
 
 ```bash
 git add README.md
+git add .
 git commit -m "Add README documentation"
 git push origin main
