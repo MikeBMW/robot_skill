@@ -1,0 +1,3 @@
+[console_scripts]
+hello_skill = robot_skill.hello_skill:main
+

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/robot_skill
+robot_skill/__init__.py
+robot_skill/hello_skill.py
+robot_skill.egg-info/PKG-INFO
+robot_skill.egg-info/SOURCES.txt
+robot_skill.egg-info/dependency_links.txt
+robot_skill.egg-info/entry_points.txt
+robot_skill.egg-info/requires.txt
+robot_skill.egg-info/top_level.txt
+robot_skill.egg-info/zip-safe
