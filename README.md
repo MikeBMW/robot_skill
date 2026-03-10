@@ -57,3 +57,32 @@ git add README.md
 git add .
 git commit -m "Add README documentation"
 git push origin main
+
+
+# Gazebo
+
+这是一个基于 ROS 2 的功能包，主要用于演示机器人技能控制及 Gazebo 仿真集成。
+
+## 📦 功能特性
+
+- **Hello Skill 节点**: 基础技能演示节点。
+- **Gazebo 仿真**: 包含启动 Gazebo 仿真的 Launch 文件。
+- **模块化设计**: 易于扩展新的技能节点。
+
+source ~/ros2_ws/install/setup.bash
+echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+ros2 run robot_skill hello_skill
+ros2 launch robot_skill start_gazebo_simulation.py
+
+📂 项目结构
+robot_skill/
+├── README.md               # 本说明文件
+├── package.xml             # 包依赖描述文件
+├── setup.py                # Python 包构建配置
+├── resource/               # Ament 资源索引
+├── launch/                 # Launch 启动文件
+│   └── start_gazebo_simulation.py
+└── robot_skill/            # Python 源代码目录
+    ├── __init__.py
+    └── hello_skill.py      # 主节点代码
